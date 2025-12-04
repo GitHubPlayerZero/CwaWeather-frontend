@@ -77,7 +77,11 @@ function renderDate () {
   const dayIndex = now.getDay();
   const days = ["週日", "週一", "週二", "週三", "週四", "週五", "週六"];
 
-  document.getElementById('updateTime').textContent = `${month}月${date}日 ${days[dayIndex]}`;
+  document.getElementById('updateTime').innerHTML = 
+    `
+      <span style="white-space: nowrap;">${month}月${date}日</span> 
+      <span style="white-space: nowrap;">${days[dayIndex]}</span>
+    `;
 }
 
 

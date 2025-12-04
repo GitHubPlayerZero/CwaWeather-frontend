@@ -39,6 +39,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 12px;
   padding: 15px 20px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -49,7 +50,9 @@ button {
 
 .location-btn {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
+  row-gap: 15px;
 }
 
 .location-pill {
